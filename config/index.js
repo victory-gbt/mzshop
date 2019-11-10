@@ -9,10 +9,10 @@ module.exports = {
 
     // Paths
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/',
+    assetsPublicPath: './',
     proxyTable: {
         '/api': {
-         target: 'http://localhost:8858',
+         target: 'http://192.168.100.1/:8858',
          //如果涉及跨域，需要使用
          changeOrigin: true,
          pathRewrite: {
@@ -22,7 +22,7 @@ module.exports = {
     },
 
     // Various Dev Server settings
-    host: 'localhost', // can be overwritten by process.env.HOST
+    host: 'http://192.168.100.1/', // can be overwritten by process.env.HOST
     port: 8080, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
     autoOpenBrowser: true,
     errorOverlay: true,
