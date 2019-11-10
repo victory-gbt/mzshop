@@ -10,8 +10,8 @@ server.use(router);
 server.use(JsonServer.bodyParser);
 
 server.listen({
-	host: '127.0.0.1',
-	port: '8858'
+	host: '223.68.190.130',
+	port: '8181'
 }, function() {
 	console.log('json-server is running...');
 })
