@@ -3,7 +3,7 @@
     <ul class="clearfix">
       <li class="goods-list" v-for="(item, index) in data" :key="index" :class="{'last-child' : (index + 1) % 4 === 0 }">
         <a :href="item.href">
-          <img class="goods-img" :src="../../../$(item.goodsUrl)" alt="">
+          <img class="goods-img" :src="../../../static/$(item.goodsUrl)" alt="">
           <div class="goods-name"> {{ item.goodsName }} </div>
           <div class="goods-desc"> {{ item.goodsDesc }} </div>
           <div class="goods-price">
